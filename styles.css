@@ -1,0 +1,240 @@
+/* default size */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*    Body   */
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(229, 6%, 66%);
+    /* max-width: 1440px; */
+    text-align: center;
+    padding: 2%;
+    align-items: center;
+    
+}
+
+/* Heading  and Paragraph*/
+h1,
+h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: hsl(234, 12%, 34%);
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 20px;
+    color: hsl(234, 12%, 34%);
+}
+
+p {
+    margin-top: 3%;
+    line-height: 150%;
+}
+
+.heading {
+    padding: 0 34%;
+}
+
+.box {
+    align-items: center;
+    text-align: center;
+}
+
+/*  Containter  */
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+/* Cards  */
+.super,
+.builder,
+.karma,
+.calculator {
+    width: 350px !important;
+    height: 250px !important;
+    margin: 20px;
+    border-radius: 5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 2.19%;
+    box-shadow: 0px 10px 20px rgba(143, 166, 185, 0.3);
+    -webkit-transition: transform 0.5s ease-out;
+    -moz-transition: transform 0.5s ease-out;
+    -o-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+
+.builder,
+.karma {
+    padding: 8%;
+}
+
+.builder {
+    margin-bottom: 30px;
+}
+
+/*  Image  */
+img {
+    align-self: flex-end;
+    width: 60px;
+    height: 60px;
+}
+
+.builder img {
+    margin-top: 2.5rem;
+}
+
+.karma img {
+    margin-top: 2.5rem;
+}
+
+.super img {
+    margin-top: 2.5rem;
+}
+
+.calculator img {
+    margin-top: 3rem;
+}
+
+/* cards top border */
+.super {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.builder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+/* Hover */
+.super:hover,
+.builder:hover,
+.calculator:hover,
+.karma:hover {
+    transform: scale(1.09);
+}
+
+/* For Small Display  */
+@media only screen and (max-width: 1160px) and (min-width:320px) {
+
+    /* Container */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* cards */
+    .super,
+    .builder,
+    .karma,
+    .calculator {
+        width: 220px !important;
+        height: 150px !important;
+        margin: 20px;
+        border-radius: 5%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        padding: 2.19%;
+        box-shadow: 0px 10px 20px rgba(143, 166, 185, 0.3);
+        -webkit-transition: transform 0.5s ease-out;
+        -moz-transition: transform 0.5s ease-out;
+        -o-transition: transform 0.5s ease-out;
+        transition: transform 0.5s ease-out;
+    }
+
+    .builder,
+    .karma {
+        padding: 8%;
+    }
+
+    /*  Heading and Paragraph */
+    h1,
+    h2 {
+        font-size: 18px;
+        font-weight: 900;
+        color: hsl(234, 12%, 34%);
+    }
+
+    h1 {
+        font-weight: lighter;
+    }
+
+    h2 {
+        padding-bottom: 0.5rem;
+    }
+
+    h3 {
+        font-size: 15px;
+        color: hsl(234, 12%, 34%);
+    }
+
+    p {
+        margin-top: 3%;
+        line-height: 150%;
+        font-size: 9px;
+    }
+
+    .heading {
+        padding: 0% 2%;
+        text-align: center;
+
+    }
+
+    .heading p {
+        width: 18rem;
+        margin: 0 auto;
+    }
+
+    /* image */
+    img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .builder img {
+        margin-top: 1rem;
+    }
+
+    .super img {
+        margin-top: 1rem;
+    }
+
+    .calculator img {
+        margin-top: 1.5rem;
+    }
+
+    .karma img {
+        margin-top: 1rem;
+    }
+
+    /* Hover */
+    .super:hover,
+    .builder:hover,
+    .calculator:hover,
+    .karma:hover {
+        transform: scale(1.09);
+    }
+}
